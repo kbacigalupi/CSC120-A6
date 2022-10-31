@@ -1,9 +1,18 @@
+/*
+ *Parent class-building 
+ */
 public class Building {
 
     private String name = "<Name Unknown>";
     private String address = "<Address Unknown>";
     private int nFloors = 1;
 
+    /*
+     * Building constructor
+     * @param name of the building
+     * @param address of the building
+     * @param nFloors the number of floors in the building
+     */
     public Building(String name, String address, int nFloors) {
         if (name != null) { this.name = name; }
         if (address != null) { this.address = address; } 
@@ -13,6 +22,7 @@ public class Building {
         this.nFloors = nFloors;
     }
 
+    /* */
     public String getName() {
         return this.name;
     }
