@@ -42,19 +42,19 @@ _____ 1 pt: The `Cafe` class uses the `restock(...)` method to avoid running out
 
 ___X__ 4 pts: Programs compile without errors or warnings
 
-_____ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+___X__ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
-_____ 2 pt: Complies with style guidelines (missing items 1 pt each):
+___X__ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
-      _____ Classes & class members all have Javadoc header comments
+      ___X__ Classes & class members all have Javadoc header comments
 
-      _____ Clear and consistent indentation of bracketed sections
+      __X___ Clear and consistent indentation of bracketed sections
 
-      _____ Adheres to Java conventions on naming & capitalization
+      __X___ Adheres to Java conventions on naming & capitalization
 
-      _____ Methods & variables all have clear and accurate names
+      __X___ Methods & variables all have clear and accurate names
 
-      _____ Methods avoid confusing side effects
+      ___X__ Methods avoid confusing side effects
 
 ___X__ 1 pt: All required files included with submission (including completed `rubric.md` file)
 
