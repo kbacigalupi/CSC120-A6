@@ -64,7 +64,7 @@ Modify the `House` **constructor** to initialize `residents` to a `new ArrayList
 2. Write the following accessors to retrieve the indicated values:
 ```
 public boolean hasDiningRoom();
-public boolean nResidents();
+public int nResidents();
 ```
 
 ---
@@ -86,7 +86,7 @@ A `Library` is an altogether different kind of building:
 
 In this phase, your task is to expand on the stub contained in `Library.java`. A `Library` doesn't have any `residents` (nor do we have to worry about a dining room), but it does have a `collection` (of titles) which we'll store in another data structure called a `HashTable`:
 ```
-private HashTable<String, boolean> collection;
+private HashTable<String, Boolean> collection;
 ```
 `HashTable`s are a way to store `(key, value)` pairs in Java. We'll use store each book's title and author (concatenated together as one `String`, i.e. `"The Lorax by Dr. Seuss"`) as the `key`, and we'll use the corresponding boolean value to record whether or not the book is available (`true`) or currently checked out (`false`).
 
@@ -102,7 +102,11 @@ public String removeTitle(String title); // return the title that we removed
 as well as to check a book out or return it (rather than adding or removing a book from the collection, these methods will simply modify the `value` associated with the given `key` - the `title`):
 ```
 public void checkOut(String title);
+<<<<<<< HEAD
 public void return(String title); (book I think it didn't like the return keyword)
+=======
+public void returnBook(String title);
+>>>>>>> c7f82e7cd9805404e5dc4519f71499832b0718f5
 ```
 _Hint: use the functions provided by the [`HashTable`](https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html) class to make this much easier! Specifically, check out `put(...)`, `remove(...)`, and `replace(...)`._
 
