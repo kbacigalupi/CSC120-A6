@@ -19,7 +19,7 @@ public class House extends Building {
     this.residents = new ArrayList<String>();
     this.hasDiningRoom = hDR;
 
-    System.out.println("You have built" + name + "house🏠");
+    System.out.println("You have built " + name + " house🏠");
     for (int i = 0; i<residents.size(); i++) {
         System.out.println(residents.get(i));
     }
@@ -57,7 +57,7 @@ public class House extends Building {
    */
   public String moveOut(String name) {
     this.residents.remove(name);
-    return name + "moved out";
+    return name + " moved out";
   }
 
   /* 
@@ -72,7 +72,11 @@ public class House extends Building {
     */
   public static void main(String[] args) {
     /* House to test out house methods */
-    new House("BOTQ", "1 Chapin Way", 4, false);
+    House BOTQ = new House("BOTQ", "1 Chapin Way", 4, false);
+    BOTQ.moveIn("Kathleen");
+    System.out.println(BOTQ.isResident("Kathleen"));
+    System.out.println(BOTQ.moveOut("Kathleen"));
+    System.out.println(BOTQ.isResident("Kathleen"));
   }
 
 }

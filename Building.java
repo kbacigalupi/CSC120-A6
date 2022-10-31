@@ -22,26 +22,45 @@ public class Building {
         this.nFloors = nFloors;
     }
 
-    /* */
+    /*get Name Accessor for building name
+     * @return the building name
+    */
     public String getName() {
         return this.name;
     }
 
+    /*
+     * get Address accessor for building address
+     * @return the building address
+     */
     public String getAddress() {
         return this.address;
     }
 
+    /*Accessor for floors
+     * @return the number of floors in teh building
+     */
     public int getFloors() {
         return this.nFloors;
     }
 
+    /*
+     * modifies the toString method and 
+     * @return the string that tells the name, floors and location of the building in a sentence
+     */
     public String toString() {
         return this.name + " is a " + this.nFloors + "-story building located at " + this.address;
     }
 
+    /* main method (for testing)
+     * @param args the command line args ignored in this context
+    */
     public static void main(String[] args) {
         Building fordHall = new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4);
         System.out.println(fordHall);
+        System.out.println(fordHall.getAddress());
+        System.out.println(fordHall.getName());
+
     }
 
 }
